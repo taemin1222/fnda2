@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONCE, ONE'S BY JOSUN HOTEL | 런칭 홍보 전략 쇼케이스</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cormorant Garamond, Montserrat, Noto Serif KR, Pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@300;400;600;700;900&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            josun: {
+              emerald: '#0B241C',
+              'emerald-light': '#13392D',
+              'emerald-dark': '#061712',
+              gold: '#D4AF37',
+              'gold-light': '#F3E5AB',
+              'gold-dark': '#9A7B1C',
+              velvet: '#1E1210',
+              cream: '#FDFBF7',
+              charcoal: '#1A1E1C',
+              sand: '#EAE5D9'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Noto Serif KR"', 'serif'],
+            sans: ['Pretendard', 'Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #061712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D4AF37;
+      border-radius: 3px;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA820A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-border-gradient {
+      border-image: linear-gradient(to right, #D4AF37, #F3E5AB, #9A7B1C) 1;
+    }
+
+    .gold-glow {
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.18);
+    }
+
+    .ambient-bg {
+      background: radial-gradient(circle at 50% 20%, rgba(19, 57, 45, 0.6) 0%, rgba(11, 36, 28, 0.95) 60%, #061712 100%);
+    }
+
+    .glass-card {
+      background: rgba(19, 57, 45, 0.45);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(212, 175, 55, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-josun-emerald-dark text-josun-sand font-sans antialiased selection:bg-josun-gold selection:text-josun-emerald-dark overflow-x-hidden">
+
+  <!-- Top Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-josun-emerald-dark/90 backdrop-blur-md border-b border-josun-gold/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 border border-josun-gold/50 flex items-center justify-center rotate-45 bg-josun-emerald">
+          <span class="-rotate-45 font-serif font-bold text-josun-gold text-lg">O</span>
+        </div>
+        <div>
+          <span class="font-serif tracking-widest text-sm text-josun-gold uppercase block leading-none">ONCE, ONE'S</span>
+          <span class="text-[10px] tracking-widest text-josun-sand/70 uppercase">BY JOSUN HOTEL</span>
+        </div>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs tracking-wider uppercase text-josun-sand/80">
+        <a href="#summary" class="hover:text-josun-gold transition">개요 & 철학</a>
+        <a href="#assets" class="hover:text-josun-gold transition text-josun-gold font-semibold flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-josun-gold animate-pulse"></span>홍보 에셋 3종
+        </a>
+        <a href="#dual-track" class="hover:text-josun-gold transition">듀얼 트랙 & AI</a>
+        <a href="#strategy" class="hover:text-josun-gold transition">채널 전략 & 로드맵</a>
+        <a href="#kpi" class="hover:text-josun-gold transition">목표 KPI</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center space-x-3">
+        <button onclick="openModal('app-download')" class="hidden sm:inline-flex items-center px-4 py-2 border border-josun-gold text-josun-gold hover:bg-josun-gold hover:text-josun-emerald-dark transition text-xs tracking-widest uppercase font-semibold">
+          <i data-lucide="smartphone" class="w-3.5 h-3.5 mr-1.5"></i>
+          JOSUN ONE'S App
+        </button>
+        <span class="text-[11px] px-2.5 py-1 bg-josun-gold/15 text-josun-gold-light border border-josun-gold/30 rounded font-mono">
+          PR-2026-JH09
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen pt-28 pb-16 flex items-center justify-center ambient-bg px-4 overflow-hidden">
+    <!-- Deco Circles -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-josun-gold/5 blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-josun-emerald-light/40 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 border border-josun-gold/40 rounded-full bg-josun-emerald/60 text-josun-gold-light text-xs tracking-widest uppercase mb-8">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-josun-gold"></i>
+        Solo Luxury Staycation Campaign 2026
+      </div>
+
+      <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 leading-tight">
+        "혼자인데, <br class="sm:hidden">
+        <span class="gold-gradient-text">이렇게 대접받아도 되나요?</span>"
+      </h1>
+
+      <p class="font-serif italic text-lg sm:text-2xl text-josun-gold-light/90 max-w-3xl mx-auto mb-6 font-light">
+        "한 번 와도, 혼자 와도 우리 사람"
+      </p>
+
+      <p class="text-sm sm:text-base text-josun-sand/80 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+        1인 가구 1,000만 시대, 타인의 시선과 선택 피로에서 벗어난 온전한 솔로 럭셔리(Solo Luxury).<br class="hidden sm:inline">
+        조선호텔의 100년 헤리티지와 AI 컨시어지가 빚어낸 1인 전용 프리미엄 호캉스 브랜드
+        <strong class="text-white font-medium">『ONCE, ONE'S』</strong> 공식 런칭 기획안입니다.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#assets" class="px-8 py-3.5 bg-josun-gold text-josun-emerald-dark font-medium tracking-widest text-xs uppercase hover:bg-josun-gold-light transition gold-glow flex items-center gap-2">
+          <i data-lucide="eye" class="w-4 h-4"></i>
+          홍보 비주얼 에셋 바로보기
+        </a>
+        <a href="#dual-track" class="px-8 py-3.5 border border-josun-gold/60 text-josun-gold-light font-medium tracking-widest text-xs uppercase hover:bg-josun-emerald transition flex items-center gap-2">
+          <i data-lucide="compass" class="w-4 h-4"></i>
+          듀얼 트랙 시스템 탐색
+        </a>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-4xl mx-auto text-left border-t border-josun-gold/20 pt-8">
+        <div class="p-3">
+          <p class="text-[11px] text-josun-sand/60 uppercase tracking-widest">Brand</p>
+          <p class="text-lg font-serif font-bold text-josun-gold">ONCE, ONE'S</p>
+        </div>
+        <div class="p-3 border-l border-josun-gold/15">
+          <p class="text-[11px] text-josun-sand/60 uppercase tracking-widest">Core Target</p>
+          <p class="text-lg font-serif font-bold text-white">28~39 싱글 앰비슈머</p>
+        </div>
+        <div class="p-3 border-l border-josun-gold/15">
+          <p class="text-[11px] text-josun-sand/60 uppercase tracking-widest">Key Solution</p>
+          <p class="text-lg font-serif font-bold text-josun-gold">Dual-Track & AI Concierge</p>
+        </div>
+        <div class="p-3 border-l border-josun-gold/15">
+          <p class="text-[11px] text-josun-sand/60 uppercase tracking-widest">Campaign Goal</p>
+          <p class="text-lg font-serif font-bold text-white">500만+ Impression</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Executive Summary & Background -->
+  <section id="summary" class="py-24 bg-josun-emerald border-t border-b border-josun-gold/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b border-josun-gold/20 pb-6">
+        <div>
+          <span class="text-xs font-mono tracking-widest text-josun-gold uppercase block mb-1">01 / Strategic Foundation</span>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white">추진 배경 및 페인 포인트 솔루션</h2>
+        </div>
+        <p class="text-xs text-josun-sand/60 mt-3 md:mt-0 font-mono">기안: 브랜드마케팅팀 x Future Dream Academy</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="glass-card p-8 rounded-lg relative overflow-hidden group">
+          <div class="text-josun-gold/20 font-serif text-6xl font-bold absolute right-4 top-4 group-hover:text-josun-gold/40 transition">01</div>
+          <div class="w-12 h-12 rounded-full bg-josun-gold/10 border border-josun-gold/30 flex items-center justify-center text-josun-gold mb-6">
+            <i data-lucide="user-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white mb-2">심리적 장벽 해소</h3>
+          <p class="text-xs text-josun-gold mb-4 font-mono uppercase">Unconscious Judgment Barrier</p>
+          <div class="text-xs space-y-3 leading-relaxed">
+            <div class="bg-black/30 p-3 rounded border-l-2 border-red-400/80">
+              <span class="text-red-300 font-semibold block text-[11px] mb-0.5">Pain Point</span>
+              "혼자 특급호텔 라운지나 다이닝에 가면 괜히 주위 눈치가 보이고 소외감을 느껴요."
+            </div>
+            <div class="bg-josun-emerald-dark/60 p-3 rounded border-l-2 border-josun-gold">
+              <span class="text-josun-gold font-semibold block text-[11px] mb-0.5">ONCE, ONE'S Solution</span>
+              1인 전담 VIP 테이블 세팅, 1인 맞춤 테이스팅 메뉴, 시선이 차단된 프라이빗 좌석 설계.
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card p-8 rounded-lg relative overflow-hidden group">
+          <div class="text-josun-gold/20 font-serif text-6xl font-bold absolute right-4 top-4 group-hover:text-josun-gold/40 transition">02</div>
+          <div class="w-12 h-12 rounded-full bg-josun-gold/10 border border-josun-gold/30 flex items-center justify-center text-josun-gold mb-6">
+            <i data-lucide="zap-off" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white mb-2">선택 피로도 제로화</h3>
+          <p class="text-xs text-josun-gold mb-4 font-mono uppercase">Decision Fatigue Zero</p>
+          <div class="text-xs space-y-3 leading-relaxed">
+            <div class="bg-black/30 p-3 rounded border-l-2 border-red-400/80">
+              <span class="text-red-300 font-semibold block text-[11px] mb-0.5">Pain Point</span>
+              "숙소 예약, 와인 페어링, 일정 짜다 쉬기도 전에 번아웃이 와요."
+            </div>
+            <div class="bg-josun-emerald-dark/60 p-3 rounded border-l-2 border-josun-gold">
+              <span class="text-josun-gold font-semibold block text-[11px] mb-0.5">ONCE, ONE'S Solution</span>
+              ‘JOSUN ONE'S’ AI 앱을 통해 단 3가지 취향 문답으로 입실부터 룸서비스까지 자동 큐레이션.
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card p-8 rounded-lg relative overflow-hidden group">
+          <div class="text-josun-gold/20 font-serif text-6xl font-bold absolute right-4 top-4 group-hover:text-josun-gold/40 transition">03</div>
+          <div class="w-12 h-12 rounded-full bg-josun-gold/10 border border-josun-gold/30 flex items-center justify-center text-josun-gold mb-6">
+            <i data-lucide="git-fork" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white mb-2">경험의 양극단 공존</h3>
+          <p class="text-xs text-josun-gold mb-4 font-mono uppercase">Dual-Track Autonomy</p>
+          <div class="text-xs space-y-3 leading-relaxed">
+            <div class="bg-black/30 p-3 rounded border-l-2 border-red-400/80">
+              <span class="text-red-300 font-semibold block text-[11px] mb-0.5">Pain Point</span>
+              "완벽한 고립이 필요할 때도 있고, 때로는 은은한 취향 교류가 그리울 때도 있는데..."
+            </div>
+            <div class="bg-josun-emerald-dark/60 p-3 rounded border-l-2 border-josun-gold">
+              <span class="text-josun-gold font-semibold block text-[11px] mb-0.5">ONCE, ONE'S Solution</span>
+              방해 없는 Track A (Complete Privacy)와 느슨한 취향 살롱 Track B (Soft Connection) 즉시 전환.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Persona Profile -->
+      <div class="mt-12 glass-card p-6 md:p-8 rounded-xl border border-josun-gold/30 flex flex-col lg:flex-row items-center gap-8">
+        <div class="flex-shrink-0 flex items-center justify-center w-24 h-24 rounded-full border-2 border-josun-gold bg-josun-emerald-dark">
+          <i data-lucide="crown" class="w-10 h-10 text-josun-gold"></i>
+        </div>
+        <div class="flex-1 text-center lg:text-left">
+          <div class="inline-block px-3 py-1 bg-josun-gold/15 text-josun-gold text-xs font-mono uppercase tracking-wider rounded mb-2">
+            Target Persona: The Refined Ambisumer
+          </div>
+          <h4 class="font-serif text-xl sm:text-2xl font-bold text-white mb-2">
+            28~39세 전문직 및 고소득 1인 가구 솔로 싱글
+          </h4>
+          <p class="text-xs sm:text-sm text-josun-sand/80 leading-relaxed font-light">
+            “일터에서는 끊임없는 의사결정에 시달리지만, 휴식 시간만큼은 나만을 위한 궁극의 대접과 섬세한 호사를 기꺼이 구매하는 사람들. 인위적인 네트워킹은 피하되, 수준 높은 와인과 예술, 독서에 관한 잔잔한 공감대에는 마음을 엽니다.”
+          </p>
+        </div>
+        <div class="flex-shrink-0 grid grid-cols-2 gap-3 text-center text-xs font-mono">
+          <div class="p-3 bg-josun-emerald-dark/80 rounded border border-josun-gold/20">
+            <span class="block text-josun-gold text-base font-bold">1,000만</span>
+            <span class="text-[10px] text-josun-sand/60">대한민국 1인 가구</span>
+          </div>
+          <div class="p-3 bg-josun-emerald-dark/80 rounded border border-josun-gold/20">
+            <span class="block text-josun-gold text-base font-bold">+15%p</span>
+            <span class="text-[10px] text-josun-sand/60">평일 OCC 개선목표</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Visual Assets Showcase (The Core!) -->
+  <section id="assets" class="py-24 ambient-bg relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono tracking-widest text-josun-gold uppercase block mb-2">02 / Creative Master Assets</span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white mb-4">
+          홍보 콘텐츠 3종 비주얼 쇼케이스
+        </h2>
+        <div class="w-16 h-0.5 bg-josun-gold mx-auto mb-4"></div>
+        <p class="text-sm text-josun-sand/80 font-light">
+          딥 에메랄드 그린, 웜 샴페인 골드, 다크 우드 & 벨벳 톤앤매너로 일관되게 큐레이션된 온·오프라인 핵심 자산입니다. 카드를 클릭하면 상세 비주얼과 제작 의도를 탐색할 수 있습니다.
+        </p>
+      </div>
+
+      <!-- Asset Tabs -->
+      <div class="flex justify-center mb-12">
+        <div class="inline-flex p-1.5 rounded-lg bg-josun-emerald border border-josun-gold/30">
+          <button onclick="switchAssetTab('cardnews')" id="tab-cardnews" class="px-5 py-2.5 rounded-md text-xs font-medium uppercase tracking-wider transition bg-josun-gold text-josun-emerald-dark font-semibold">
+            1. 인스타그램 카드뉴스 (4컷)
+          </button>
+          <button onclick="switchAssetTab('poster')" id="tab-poster" class="px-5 py-2.5 rounded-md text-xs font-medium uppercase tracking-wider transition text-josun-sand hover:text-josun-gold">
+            2. 에디토리얼 무드보드 포스터
+          </button>
+          <button onclick="switchAssetTab('shortform')" id="tab-shortform" class="px-5 py-2.5 rounded-md text-xs font-medium uppercase tracking-wider transition text-josun-sand hover:text-josun-gold">
+            3. 18초 숏폼 영상 시뮬레이터
+          </button>
+        </div>
+      </div>
+
+      <!-- TAB 1: INSTAGRAM CARD NEWS (4 Cuts) -->
+      <div id="content-cardnews" class="block transition-all duration-300">
+        <div class="glass-card p-6 sm:p-8 rounded-2xl mb-8">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-josun-gold/20 mb-8 gap-4">
+            <div>
+              <span class="text-xs font-mono text-josun-gold">1080 x 1080 px (1:1 Ratio) | Carousel Touchpoint</span>
+              <h3 class="text-xl sm:text-2xl font-serif font-bold text-white mt-1">
+                인스타그램 캐러셀 카드뉴스 (4-Cut Carousel)
+              </h3>
+            </div>
+            <div class="text-xs text-josun-sand/70 font-mono">
+              전략: 반문형 후킹 카피 → 듀얼 트랙 제시 → 앱 혜택 CTA
+            </div>
+          </div>
+
+          <!-- 4 Cards Grid with Provided Images -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
+              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('input_file_0.png', 'Card 1: 후킹 커버 (Hooking Cover)')">
+                <img src="input_file_0.png" alt="Card 1 후킹 커버" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                  <span class="text-xs text-josun-gold flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> 클릭하여 확대</span>
+                </div>
+                <span class="absolute top-3 left-3 bg-josun-emerald/90 text-josun-gold border border-josun-gold/40 text-[10px] font-mono px-2 py-0.5 rounded">CARD 01</span>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="font-serif font-bold text-base text-white mb-1">후킹 커버 (Hooking)</h4>
+                  <p class="text-xs text-josun-gold font-serif italic mb-2">"혼자인데, 이렇게 대접받아도 되나요?"</p>
+                  <p class="text-[12px] text-josun-sand/70 leading-relaxed font-light">
+                    호화로운 라운지 바 속 1인 투숙객의 여유. 기존 2인 위주 호캉스 관습에 질문을 던지며 스크롤 스톱(Scroll-stop) 유도.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-josun-gold/15 text-[10px] font-mono text-josun-sand/50">
+                  Visual: 샴페인 글라스 + 에메랄드 벨벳
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
+              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('input_file_1.png', 'Card 2: TRACK A (Complete Privacy)')">
+                <img src="input_file_1.png" alt="Card 2 Track A" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                  <span class="text-xs text-josun-gold flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> 클릭하여 확대</span>
+                </div>
+                <span class="absolute top-3 left-3 bg-josun-emerald/90 text-josun-gold border border-josun-gold/40 text-[10px] font-mono px-2 py-0.5 rounded">CARD 02</span>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="font-serif font-bold text-base text-white mb-1">TRACK A: Complete Privacy</h4>
+                  <p class="text-xs text-josun-gold font-serif italic mb-2">눈치 볼 필요 없이 완벽한 1인 럭셔리</p>
+                  <p class="text-[12px] text-josun-sand/70 leading-relaxed font-light">
+                    스위트룸 인룸 다이닝 골드 트롤리와 1인 고메 코스. 타인의 시선에서 100% 해방된 사적 휴식의 정점.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-josun-gold/15 text-[10px] font-mono text-josun-sand/50">
+                  Visual: 골드 룸서비스 트롤리 + 하이앵글
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
+              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('input_file_2.png', 'Card 3: TRACK B (Soft Connection)')">
+                <img src="input_file_2.png" alt="Card 3 Track B" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                  <span class="text-xs text-josun-gold flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> 클릭하여 확대</span>
+                </div>
+                <span class="absolute top-3 left-3 bg-josun-emerald/90 text-josun-gold border border-josun-gold/40 text-[10px] font-mono px-2 py-0.5 rounded">CARD 03</span>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="font-serif font-bold text-base text-white mb-1">TRACK B: Soft Connection</h4>
+                  <p class="text-xs text-josun-gold font-serif italic mb-2">취향으로 만나는 1인 소셜 라이프</p>
+                  <p class="text-[12px] text-josun-sand/70 leading-relaxed font-light">
+                    와인 테이스팅 바에서 어색함 없이 각자의 취향을 나누는 품격 있는 살롱 네트워킹 경험 제시.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-josun-gold/15 text-[10px] font-mono text-josun-sand/50">
+                  Visual: 프라이빗 와인 살롱 & 테이스팅
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
+              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('input_file_3.png', 'Card 4: 브랜드 가치 및 CTA (우리 사람)')">
+                <img src="input_file_3.png" alt="Card 4 CTA" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                  <span class="text-xs text-josun-gold flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> 클릭하여 확대</span>
+                </div>
+                <span class="absolute top-3 left-3 bg-josun-emerald/90 text-josun-gold border border-josun-gold/40 text-[10px] font-mono px-2 py-0.5 rounded">CARD 04</span>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="font-serif font-bold text-base text-white mb-1">Call To Action (CTA)</h4>
+                  <p class="text-xs text-josun-gold font-serif italic mb-2">"한 번 와도, 혼자 와도 우리 사람"</p>
+                  <p class="text-[12px] text-josun-sand/70 leading-relaxed font-light">
+                    JOSUN ONE'S 앱 다운로드 시 1인 전용 웰컴 패키지 즉시 증정. 조선호텔 특유의 깊은 환대 전달.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-josun-gold/15 text-[10px] font-mono text-josun-sand/50">
+                  Visual: 스마트폰 앱 화면 클로즈업
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: EDITORIAL MOODBOARD POSTER -->
+      <div id="content-poster" class="hidden transition-all duration-300">
+        <div class="glass-card p-6 sm:p-10 rounded-2xl mb-8">
+          <div class="flex flex-col lg:flex-row gap-10 items-center">
+            
+            <!-- Poster Display -->
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <div class="relative max-w-md rounded-xl overflow-hidden shadow-2xl border-2 border-josun-gold/40 cursor-pointer group" onclick="openLightbox('input_file_4.png', '메인 포스터: 10 Things to do alone in JOSUN HOTEL')">
+                <img src="input_file_4.png" alt="Editorial Moodboard Poster" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                  <div class="bg-josun-emerald/90 text-josun-gold border border-josun-gold px-4 py-2 rounded-full text-xs font-mono flex items-center gap-2">
+                    <i data-lucide="zoom-in" class="w-4 h-4"></i> 고화질 원본 크게보기 (2480x3508)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poster Deconstruction & Story -->
+            <div class="w-full lg:w-1/2 space-y-6">
+              <div>
+                <span class="text-xs font-mono text-josun-gold tracking-widest uppercase">Editorial Moodboard Flatlay (3:4 Ratio)</span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white mt-1">
+                  10 Things to do alone in JOSUN HOTEL
+                </h3>
+                <p class="font-serif italic text-josun-gold-light mt-1">
+                  "귀찮은 건 호텔이 다 해줄게, 넌 즐기기만 해"
+                </p>
+              </div>
+
+              <p class="text-xs sm:text-sm text-josun-sand/80 leading-relaxed font-light">
+                잡지 에디토리얼 형식의 무드보드 플랫레이(Flat Lay) 기법을 차용하여, 1인 투숙객이 경험할 수 있는 다채로운 순간들을 에메랄드 대리석 위에 감각적으로 배치했습니다. 호텔 디지털 사이니지 및 객실 웰컴 엽서로 활용됩니다.
+              </p>
+
+              <!-- 4 Quadrants Spec -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div class="bg-josun-emerald-dark/80 p-3.5 rounded border border-josun-gold/20">
+                  <span class="text-josun-gold font-bold block mb-1 font-mono">TOP LEFT : WINE TASTING</span>
+                  <p class="text-josun-sand/70 text-[11px]">빈티지 와인 보틀, 크리스탈 글라스, 소믈리에 1인 테이스팅 가이드</p>
+                </div>
+                <div class="bg-josun-emerald-dark/80 p-3.5 rounded border border-josun-gold/20">
+                  <span class="text-josun-gold font-bold block mb-1 font-mono">TOP RIGHT : LUXURY SUITE</span>
+                  <p class="text-josun-sand/70 text-[11px]">고요한 스위트 룸, 린넨 베딩, 완벽한 사적 공간의 폴라로이드 사진 클러스터</p>
+                </div>
+                <div class="bg-josun-emerald-dark/80 p-3.5 rounded border border-josun-gold/20">
+                  <span class="text-josun-gold font-bold block mb-1 font-mono">BOTTOM LEFT : CURATION APP</span>
+                  <p class="text-josun-sand/70 text-[11px]">스마트폰 화면 속 AI가 즉시 제안하는 Track A/B 스마트 셀렉터</p>
+                </div>
+                <div class="bg-josun-emerald-dark/80 p-3.5 rounded border border-josun-gold/20">
+                  <span class="text-josun-gold font-bold block mb-1 font-mono">BOTTOM RIGHT : PRIVATE KEY</span>
+                  <p class="text-josun-sand/70 text-[11px]">조선호텔 금박 각인 브라운 레더 키홀더와 클래식 브라스 키</p>
+                </div>
+              </div>
+
+              <div class="p-4 bg-josun-gold/10 border-l-2 border-josun-gold text-xs text-josun-sand/90">
+                <strong class="text-josun-gold">현장 비치 계획:</strong> 그랜드 조선, 레스케이프, 웨스틴 조선 전 객실 키 카드 케이스에 포스터 엽서 동봉 및 광화문·테헤란로·여의도 오피스 미디어월 퇴근 시간대 송출.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: SHORT-FORM VIDEO SIMULATOR -->
+      <div id="content-shortform" class="hidden transition-all duration-300">
+        <div class="glass-card p-6 sm:p-10 rounded-2xl mb-8">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+              <span class="text-xs font-mono text-josun-gold uppercase tracking-widest">Vertical Short-form (9:16) | 18 Seconds</span>
+              <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white mt-1">
+                18초 숏폼 영상 타임라인 시뮬레이터
+              </h3>
+              <p class="text-xs text-josun-sand/70 mt-1 font-mono">
+                Instagram Reels · YouTube Shorts · TikTok 분할 대비(Split and Transition) 연출
+              </p>
+            </div>
+
+            <!-- Video Mock Player -->
+            <div class="bg-black/60 rounded-2xl p-6 border border-josun-gold/30">
+              
+              <!-- Timeline Bar -->
+              <div class="mb-6">
+                <div class="flex justify-between text-xs font-mono text-josun-sand/60 mb-2">
+                  <span id="player-time-label">00:00 / 00:18</span>
+                  <span id="player-scene-tag" class="text-josun-gold font-semibold">[Scene 1: Problem]</span>
+                </div>
+                <div class="w-full bg-josun-emerald-dark h-2 rounded-full overflow-hidden border border-josun-gold/20">
+                  <div id="timeline-progress" class="bg-josun-gold h-full transition-all duration-300" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <!-- Interactive Scene Screen -->
+              <div id="scene-display" class="bg-josun-emerald p-6 sm:p-8 rounded-xl min-h-[220px] flex flex-col justify-between border border-josun-gold/20 transition-all">
+                <div class="flex items-center justify-between">
+                  <span id="scene-seconds" class="px-2.5 py-1 bg-black/40 text-josun-gold font-mono text-xs rounded border border-josun-gold/30">
+                    00초 ~ 04초 (4초)
+                  </span>
+                  <span id="scene-bgm" class="text-xs text-josun-sand/60 flex items-center gap-1 font-mono">
+                    <i data-lucide="music" class="w-3.5 h-3.5 text-josun-gold"></i> 일상 소음 + 시계 초침 째깍거림
+                  </span>
+                </div>
+
+                <div class="my-6 text-center">
+                  <p id="scene-subtitle" class="font-serif text-lg sm:text-2xl font-bold text-white leading-relaxed">
+                    "혼자 쉬러 갔는데... 왜 더 지치는 걸까?"
+                  </p>
+                  <p id="scene-visual" class="text-xs sm:text-sm text-josun-sand/70 mt-2 font-light">
+                    [Problem] 빠른 컷 전환: 붐비는 식당 2인석 눈치, 맛집 대기열, 배터리 방전 직전 지친 표정
+                  </p>
+                </div>
+
+                <div class="flex items-center justify-between text-[11px] text-josun-sand/50 border-t border-josun-gold/10 pt-3">
+                  <span>심리적 공감대 후킹</span>
+                  <span class="font-mono">Transition: 컷 전환 급격</span>
+                </div>
+              </div>
+
+              <!-- Simulator Controls -->
+              <div class="flex flex-wrap items-center justify-center gap-3 mt-6">
+                <button onclick="playShortsTimeline()" id="play-btn" class="px-6 py-2.5 bg-josun-gold text-josun-emerald-dark font-semibold text-xs tracking-wider uppercase rounded hover:bg-josun-gold-light transition flex items-center gap-2">
+                  <i data-lucide="play" class="w-4 h-4"></i> 타임라인 자동 재생
+                </button>
+                <button onclick="setShortsScene(0)" class="px-4 py-2 border border-josun-gold/30 text-xs rounded hover:bg-josun-emerald transition font-mono">
+                  01. Problem (0~4s)
+                </button>
+                <button onclick="setShortsScene(1)" class="px-4 py-2 border border-josun-gold/30 text-xs rounded hover:bg-josun-emerald transition font-mono">
+                  02. Solution (4~9s)
+                </button>
+                <button onclick="setShortsScene(2)" class="px-4 py-2 border border-josun-gold/30 text-xs rounded hover:bg-josun-emerald transition font-mono">
+                  03. Delight (9~14s)
+                </button>
+                <button onclick="setShortsScene(3)" class="px-4 py-2 border border-josun-gold/30 text-xs rounded hover:bg-josun-emerald transition font-mono">
+                  04. Brand Ending (14~18s)
+                </button>
+              </div>
+
+            </div>
+
+            <!-- 9:16 Shorts Video Actual Player (3조 원스.mp4) -->
+            <div class="mt-12 pt-10 border-t border-josun-gold/20 flex flex-col items-center">
+              <div class="text-center mb-6">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-josun-gold/15 text-josun-gold-light border border-josun-gold/30 text-[11px] font-mono uppercase tracking-wider mb-2">
+                  <i data-lucide="film" class="w-3.5 h-3.5 text-josun-gold"></i>
+                  Official 9:16 Vertical Video Asset
+                </div>
+                <h4 class="font-serif text-2xl sm:text-3xl font-bold text-white">
+                  3조 원스 (18초 세로형 숏폼 본편)
+                </h4>
+                <p class="text-xs text-josun-sand/70 mt-1 font-mono">
+                  파일명: <span class="text-josun-gold font-semibold">3조 원스.mp4</span> · 1080 x 1920 (9:16 Vertical Shorts/Reels/TikTok)
+                </p>
+              </div>
+
+              <!-- Smartphone Mockup Frame for 9:16 Ratio Video -->
+              <div class="relative w-full max-w-[320px] sm:max-w-[350px] aspect-[9/16] bg-black rounded-[42px] p-3.5 shadow-2xl border-4 border-josun-gold/60 gold-glow ring-2 ring-josun-gold/20">
+                <!-- Phone Top Speaker / Notch Deco -->
+                <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-4 bg-black/90 rounded-full z-20 flex items-center justify-center">
+                  <div class="w-2.5 h-2.5 rounded-full bg-josun-emerald-light border border-josun-gold/50 mr-2"></div>
+                  <div class="w-10 h-1 bg-white/20 rounded-full"></div>
+                </div>
+
+                <!-- Video Frame -->
+                <div class="relative w-full h-full rounded-[30px] overflow-hidden bg-josun-emerald-dark flex items-center justify-center">
+                  <video 
+                    id="actual-shorts-video" 
+                    src="3조 원스.mp4" 
+                    controls 
+                    playsinline 
+                    preload="metadata"
+                    class="w-full h-full object-cover rounded-[30px]"
+                  >
+                    브라우저가 HTML5 비디오 재생을 지원하지 않습니다.
+                  </video>
+
+                  <!-- Brand Tag Watermark -->
+                  <div class="absolute top-8 left-4 pointer-events-none z-10 flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded-full border border-josun-gold/40">
+                    <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                    <span class="text-[10px] font-mono text-josun-gold tracking-widest uppercase font-semibold">ONCE, ONE'S</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Playback Guide & Meta Info -->
+              <div class="mt-4 flex flex-col sm:flex-row items-center gap-4 text-center text-xs text-josun-sand/60 font-mono">
+                <span class="flex items-center gap-1.5">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-josun-gold"></i>
+                  모바일 최적화 9:16 비율
+                </span>
+                <span class="hidden sm:inline text-josun-gold/30">•</span>
+                <span class="flex items-center gap-1.5">
+                  <i data-lucide="volume-2" class="w-3.5 h-3.5 text-josun-gold"></i>
+                  재생 및 음량 조절 지원
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Dual-Track Experience & JOSUN ONE'S App Simulator -->
+  <section id="dual-track" class="py-24 bg-josun-emerald border-t border-b border-josun-gold/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b border-josun-gold/20 pb-6">
+        <div>
+          <span class="text-xs font-mono tracking-widest text-josun-gold uppercase block mb-1">03 / Dual-Track Architecture</span>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white">완벽한 사적 휴식 vs 느슨한 취향의 연대</h2>
+        </div>
+        <p class="text-xs text-josun-sand/60 mt-2 md:mt-0 font-mono">투숙 중 실시간 전환 가능한 하이브리드 스테이</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        
+        <!-- Track A Card -->
+        <div class="glass-card p-8 rounded-2xl border-2 border-josun-gold/40 relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-40 h-40 bg-josun-gold/10 rounded-full blur-2xl"></div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-josun-gold/20 text-josun-gold text-xs font-mono uppercase tracking-wider rounded mb-4">
+            <i data-lucide="shield" class="w-3.5 h-3.5"></i> Track A
+          </div>
+          <h3 class="font-serif text-3xl font-bold text-white mb-2">COMPLETE PRIVACY</h3>
+          <p class="text-xs text-josun-gold-light mb-6 font-mono">완벽한 사적 고립과 1인 전용 럭셔리 케어</p>
+
+          <ul class="space-y-4 text-xs sm:text-sm text-josun-sand/80 font-light">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-4 h-4 text-josun-gold flex-shrink-0 mt-0.5"></i>
+              <span><strong>전 객실 1인 전용 턴다운 & 배스 어메니티:</strong> 시그니처 딥 슬립 필로우 미스트 및 1인용 실크 로브 기본 제공</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-4 h-4 text-josun-gold flex-shrink-0 mt-0.5"></i>
+              <span><strong>인룸 고메 다이닝 트롤리:</strong> 셰프 특선 1인 코스 메뉴와 하프 보틀 와인 페어링을 객실 내 프라이빗 서빙</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-4 h-4 text-josun-gold flex-shrink-0 mt-0.5"></i>
+              <span><strong>무인 비대면 스마트 체크아웃:</strong> 누구와도 마주치지 않는 원터치 객실 결제 및 익스프레스 아웃</span>
+            </li>
+          </ul>
+
+          <div class="mt-8 pt-6 border-t border-josun-gold/15 flex items-center justify-between text-xs">
+            <span class="text-josun-sand/60">추천 대상: 번아웃 회복, 홀로 사색을 원하는 고객</span>
+            <span class="text-josun-gold font-mono font-bold">100% Isolated</span>
+          </div>
+        </div>
+
+        <!-- Track B Card -->
+        <div class="glass-card p-8 rounded-2xl border-2 border-josun-gold/20 hover:border-josun-gold/40 transition relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-40 h-40 bg-josun-emerald-light/40 rounded-full blur-2xl"></div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-josun-emerald-dark text-josun-sand text-xs font-mono uppercase tracking-wider rounded mb-4 border border-josun-gold/30">
+            <i data-lucide="users" class="w-3.5 h-3.5 text-josun-gold"></i> Track B
+          </div>
+          <h3 class="font-serif text-3xl font-bold text-white mb-2">SOFT CONNECTION</h3>
+          <p class="text-xs text-josun-gold-light mb-6 font-mono">취향 기반의 세련되고 독립적인 소셜 라이프</p>
+
+          <ul class="space-y-4 text-xs sm:text-sm text-josun-sand/80 font-light">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-4 h-4 text-josun-gold flex-shrink-0 mt-0.5"></i>
+              <span><strong>1인 취향 살롱 (Curated Wine Lounge):</strong> 소믈리에 해설과 함께 같은 테이스팅 노트를 공유하는 소규모 와인 세션</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-4 h-4 text-josun-gold flex-shrink-0 mt-0.5"></i>
+              <span><strong>무언(Silence) 독서 및 위스키 라운지:</strong> 사적 대화의 부담 없이 각자의 책과 글라스만을 마주하는 공간</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-4 h-4 text-josun-gold flex-shrink-0 mt-0.5"></i>
+              <span><strong>소셜 다이닝 셰어드 바:</strong> 홀로 온 고객들만을 위해 독립 바 체어로 구성된 파인다이닝 세션</span>
+            </li>
+          </ul>
+
+          <div class="mt-8 pt-6 border-t border-josun-gold/15 flex items-center justify-between text-xs">
+            <span class="text-josun-sand/60">추천 대상: 취향 공유와 영감을 원하는 앰비슈머</span>
+            <span class="text-josun-gold font-mono font-bold">Curated Connection</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- App Interface Preview Box -->
+      <div class="glass-card p-8 rounded-2xl border border-josun-gold/30 flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-r from-josun-emerald-dark to-josun-emerald">
+        <div class="space-y-3">
+          <div class="inline-flex items-center gap-2 text-xs font-mono text-josun-gold">
+            <i data-lucide="cpu" class="w-4 h-4"></i>
+            JOSUN ONE'S AI Concierge Engine
+          </div>
+          <h4 class="font-serif text-2xl font-bold text-white">탐색 피로도 0을 실현하는 모바일 AI 컨시어지</h4>
+          <p class="text-xs sm:text-sm text-josun-sand/80 max-w-2xl font-light">
+            취향 진단 3초 → Track A/B 자동 배정 → 맞춤 룸서비스 예약 → 객실 조명 및 온도 프리셋까지. 복잡한 검색 없이 앱 하나로 완성되는 럭셔리 호캉스 오케스트레이션.
+          </p>
+        </div>
+        <button onclick="openModal('app-download')" class="flex-shrink-0 px-6 py-3.5 bg-josun-gold text-josun-emerald-dark font-medium text-xs tracking-wider uppercase rounded hover:bg-josun-gold-light transition gold-glow flex items-center gap-2">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          앱 웰컴 패키지 신청 시뮬레이션
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 4: Channel Strategy & Milestones -->
+  <section id="strategy" class="py-24 ambient-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono tracking-widest text-josun-gold uppercase block mb-2">04 / Omni-Channel Execution</span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white mb-4">
+          채널별 집행 전략 & 실행 마일스톤
+        </h2>
+        <div class="w-16 h-0.5 bg-josun-gold mx-auto mb-4"></div>
+      </div>
+
+      <!-- Channel Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        
+        <!-- Digital & Social -->
+        <div class="glass-card p-6 sm:p-8 rounded-xl">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-lg bg-josun-gold/10 border border-josun-gold/30 flex items-center justify-center text-josun-gold">
+              <i data-lucide="share-2" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif text-xl font-bold text-white">Digital & Social Touchpoints</h4>
+              <p class="text-[11px] text-josun-gold font-mono">인스타그램 캐러셀 + 유튜브 숏츠 + 브이로그 연계</p>
+            </div>
+          </div>
+          <ul class="space-y-3 text-xs text-josun-sand/80 font-light">
+            <li class="p-3 bg-josun-emerald-dark/60 rounded border-l-2 border-josun-gold">
+              <strong class="text-white block mb-0.5">Meta 스폰서드 캐러셀 집행</strong>
+              25~39 고소득 싱글, 파인다이닝 및 와인 고관여 타깃팅. 4컷 캐러셀 슬라이드 종료 시 즉시 JOSUN ONE'S 앱 인앱 브라우저 다운로드 링크 유도.
+            </li>
+            <li class="p-3 bg-josun-emerald-dark/60 rounded border-l-2 border-josun-gold">
+              <strong class="text-white block mb-0.5">유튜브 숏츠 & 릴스 CPV 집중 부스팅</strong>
+              18초 대비 영상 노출 및 2030 싱글 브이로그 크리에이터 10인과의 협업을 통한 '조선호텔 1인 패키지 솔직 투숙기' 2차 바이럴(UGC) 견인.
+            </li>
+          </ul>
+        </div>
+
+        <!-- On-Premise & OOH -->
+        <div class="glass-card p-6 sm:p-8 rounded-xl">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-lg bg-josun-gold/10 border border-josun-gold/30 flex items-center justify-center text-josun-gold">
+              <i data-lucide="building" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif text-xl font-bold text-white">On-Premise & OOH Touchpoints</h4>
+              <p class="text-[11px] text-josun-gold font-mono">호텔 전 사업장 미디어 + 도심 핵심 거점 옥외광고</p>
+            </div>
+          </div>
+          <ul class="space-y-3 text-xs text-josun-sand/80 font-light">
+            <li class="p-3 bg-josun-emerald-dark/60 rounded border-l-2 border-josun-gold">
+              <strong class="text-white block mb-0.5">조선호텔 전 사업장 디지털 미디어 송출</strong>
+              그랜드 조선, 레스케이프, 웨스틴 조선 프런트 및 엘리베이터에 숏폼 & 무드보드 포스터 영상 상시 상영. 객실 내 웰컴 레터 엽서 동봉.
+            </li>
+            <li class="p-3 bg-josun-emerald-dark/60 rounded border-l-2 border-josun-gold">
+              <strong class="text-white block mb-0.5">도심 전문직 오피스 거점 OOH 사이니지</strong>
+              광화문, 테헤란로, 여의도 등 핵심 업무 지구 대형 미디어월에 '10 Things to do alone' 키 비주얼 퇴근 시간대(18:00~21:00) 집중 송출.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Interactive Milestone Checklist -->
+      <div class="glass-card p-6 sm:p-10 rounded-2xl border border-josun-gold/30">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 border-b border-josun-gold/20 pb-4">
+          <div>
+            <h3 class="font-serif text-2xl font-bold text-white">단계별 실행 체크리스트 (Milestones)</h3>
+            <p class="text-xs text-josun-sand/60 font-mono mt-0.5">체크박스를 클릭하여 실행 진행 상태를 인터랙티브하게 관리할 수 있습니다.</p>
+          </div>
+          <div class="mt-3 sm:mt-0 text-xs font-mono text-josun-gold">
+            진행률: <span id="progress-percent" class="font-bold">0%</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Phase 1 -->
+          <div class="bg-josun-emerald-dark/90 p-5 rounded-xl border border-josun-gold/20">
+            <div class="flex items-center justify-between mb-4 border-b border-josun-gold/15 pb-2">
+              <span class="font-serif font-bold text-josun-gold text-sm">PHASE 1 : PRE-LAUNCH</span>
+              <span class="text-[10px] font-mono text-josun-sand/60">D-30 ~ D-1</span>
+            </div>
+            <div class="space-y-3 text-xs">
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">JOSUN ONE'S 앱 알고리즘 & UI/UX QA 점검</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">호텔 현장 1인 전담 접객 프로토콜 매뉴얼 배포</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">카드뉴스 4컷 및 메인 포스터 인쇄·감리</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">18초 숏츠 렌더링 및 릴스 예약 세팅</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">사전 알림 한정판 레더 키홀더 검수</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="bg-josun-emerald-dark/90 p-5 rounded-xl border border-josun-gold/20">
+            <div class="flex items-center justify-between mb-4 border-b border-josun-gold/15 pb-2">
+              <span class="font-serif font-bold text-josun-gold text-sm">PHASE 2 : D-DAY</span>
+              <span class="text-[10px] font-mono text-josun-sand/60">Launching</span>
+            </div>
+            <div class="space-y-3 text-xs">
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">공식 브랜드 웹페이지 & 예약 오픈 (10:00)</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">인스타그램 카드뉴스 게시 & Meta 광고 On-air</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">유튜브 숏츠 / 릴스 18초 영상 동시 배포</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">호텔 로비/라운지 디지털 사이니지 교체</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="bg-josun-emerald-dark/90 p-5 rounded-xl border border-josun-gold/20">
+            <div class="flex items-center justify-between mb-4 border-b border-josun-gold/15 pb-2">
+              <span class="font-serif font-bold text-josun-gold text-sm">PHASE 3 : POST-LAUNCH</span>
+              <span class="text-[10px] font-mono text-josun-sand/60">D+1 ~ D+30</span>
+            </div>
+            <div class="space-y-3 text-xs">
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">일간 예약 추이 & 앱 설치 CVR 일일 모니터링</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">Track A vs Track B 비율 분석 및 F&B 최적화</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">인플루언서 1인 호캉스 리뷰 2차 광고 라이선스</span>
+              </label>
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" onchange="updateMilestoneProgress()" class="milestone-check mt-0.5 rounded border-josun-gold/40 text-josun-gold focus:ring-0">
+                <span class="text-josun-sand/80">캠페인 4주 차 경영진 종합 성과 보고회</span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 5: Target KPI & Impact Dashboard -->
+  <section id="kpi" class="py-24 bg-josun-emerald border-t border-josun-gold/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b border-josun-gold/20 pb-6">
+        <div>
+          <span class="text-xs font-mono tracking-widest text-josun-gold uppercase block mb-1">05 / Success Metrics</span>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white">기대 효과 및 정량적 목표 (KPI)</h2>
+        </div>
+        <p class="text-xs text-josun-sand/60 mt-2 md:mt-0 font-mono">Meta Ads + GA4 + PMS 연동 측정</p>
+      </div>
+
+      <!-- KPI Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+        
+        <div class="bg-josun-emerald-dark/80 p-5 rounded-xl border border-josun-gold/20 text-center">
+          <p class="text-[11px] font-mono text-josun-sand/60 uppercase tracking-widest mb-1">총 노출도 (Impression)</p>
+          <p class="text-3xl font-serif font-bold text-josun-gold">5,000,000+</p>
+          <span class="text-[10px] text-josun-sand/40 mt-1 block">Meta Ads + YouTube 합산</span>
+        </div>
+
+        <div class="bg-josun-emerald-dark/80 p-5 rounded-xl border border-josun-gold/20 text-center">
+          <p class="text-[11px] font-mono text-josun-sand/60 uppercase tracking-widest mb-1">숏폼 영상 조회수</p>
+          <p class="text-3xl font-serif font-bold text-white">1,500,000+</p>
+          <span class="text-[10px] text-josun-sand/40 mt-1 block">Reels + Shorts 재생 완료</span>
+        </div>
+
+        <div class="bg-josun-emerald-dark/80 p-5 rounded-xl border border-josun-gold/20 text-center">
+          <p class="text-[11px] font-mono text-josun-sand/60 uppercase tracking-widest mb-1">앱 신규 다운로드</p>
+          <p class="text-3xl font-serif font-bold text-josun-gold">30,000건</p>
+          <span class="text-[10px] text-josun-sand/40 mt-1 block">Appsflyer / GA4 UTM</span>
+        </div>
+
+        <div class="bg-josun-emerald-dark/80 p-5 rounded-xl border border-josun-gold/20 text-center">
+          <p class="text-[11px] font-mono text-josun-sand/60 uppercase tracking-widest mb-1">예약 전환율 (CVR)</p>
+          <p class="text-3xl font-serif font-bold text-white">3.8%</p>
+          <span class="text-[10px] text-josun-sand/40 mt-1 block">1인 전용 패키지 실결제</span>
+        </div>
+
+        <div class="bg-josun-emerald-dark/80 p-5 rounded-xl border border-josun-gold/20 text-center">
+          <p class="text-[11px] font-mono text-josun-sand/60 uppercase tracking-widest mb-1">평일 OCC 기여도</p>
+          <p class="text-3xl font-serif font-bold text-josun-gold">+15%p</p>
+          <span class="text-[10px] text-josun-sand/40 mt-1 block">전년 동기 주중 투숙객 대비</span>
+        </div>
+
+      </div>
+
+      <!-- Qualitative Strategic Value -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card p-6 rounded-xl border-l-4 border-josun-gold">
+          <h4 class="font-serif text-lg font-bold text-white mb-2">1. 럭셔리 1인 호캉스 기준 정립</h4>
+          <p class="text-xs text-josun-sand/80 leading-relaxed font-light">
+            전통 특급호텔의 품격 있는 헤리티지와 모바일 테크놀로지가 결합된 신규 여가 카테고리를 독점 선점하여, 2030 영 앤 리치 세대에게 조선호텔의 감각적인 브랜드 리포지셔닝을 완수합니다.
+          </p>
+        </div>
+        <div class="glass-card p-6 rounded-xl border-l-4 border-josun-gold">
+          <h4 class="font-serif text-lg font-bold text-white mb-2">2. 비수기 주중(일~목) 가동률 극대화</h4>
+          <p class="text-xs text-josun-sand/80 leading-relaxed font-light">
+            주말 커플 및 가족 투숙객 중심의 주기적 수요 공백을 2030 고소득 전문직의 주중 재충전 수요로 흡수함으로써, 객실 및 식음 부문의 지속 가능하고 안정적인 고수익 구조를 확보합니다.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-josun-emerald-dark py-16 border-t border-josun-gold/20 text-center text-xs text-josun-sand/50">
+    <div class="max-w-7xl mx-auto px-4 space-y-4">
+      <div class="w-8 h-8 mx-auto border border-josun-gold/40 flex items-center justify-center rotate-45 mb-4">
+        <span class="-rotate-45 font-serif font-bold text-josun-gold text-sm">O</span>
+      </div>
+      <p class="font-serif tracking-widest text-sm text-josun-gold uppercase">ONCE, ONE'S BY JOSUN HOTEL</p>
+      <p class="text-[11px] font-mono text-josun-sand/60">
+        문서번호: PR-2026-JH09 | 기안부서: 마케팅전략본부 브랜드마케팅팀 | 발행: Future Dream Academy x 조선호텔
+      </p>
+      <p class="text-[10px] text-josun-sand/40 max-w-md mx-auto">
+        본 문서는 2026 조선호텔앤리조트 신규 브랜드 런칭 홍보 전략을 위해 작성된 공식 브리핑용 인터랙티브 웹페이지입니다.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 backdrop-blur-md">
+    <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
+      <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-josun-gold hover:text-white transition flex items-center gap-1 text-xs font-mono">
+        <i data-lucide="x" class="w-5 h-5"></i> 닫기 (ESC)
+      </button>
+      <img id="lightbox-img" src="" alt="Enlarged Visual" class="max-h-[80vh] w-auto object-contain rounded-lg border border-josun-gold/40 shadow-2xl">
+      <p id="lightbox-caption" class="mt-3 text-sm font-serif text-josun-gold-light text-center"></p>
+    </div>
+  </div>
+
+  <!-- App Download Simulation Modal -->
+  <div id="app-modal" class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-center p-4 backdrop-blur-sm">
+    <div class="bg-josun-emerald-dark border border-josun-gold max-w-md w-full p-8 rounded-2xl relative shadow-2xl">
+      <button onclick="closeModal('app-download')" class="absolute top-4 right-4 text-josun-sand/60 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-full border border-josun-gold/50 mx-auto flex items-center justify-center text-josun-gold mb-3 bg-josun-emerald">
+          <i data-lucide="smartphone" class="w-6 h-6"></i>
+        </div>
+        <h4 class="font-serif text-2xl font-bold text-white">JOSUN ONE'S App</h4>
+        <p class="text-xs text-josun-gold mt-1 font-mono">1인 전용 VIP 웰컴 패키지 즉시 증정</p>
+      </div>
+
+      <div class="space-y-4 text-xs">
+        <div class="p-3 bg-josun-emerald rounded border border-josun-gold/20">
+          <p class="text-white font-semibold mb-1">앱 설치 특별 혜택:</p>
+          <ul class="space-y-1 text-josun-sand/70 list-disc list-inside">
+            <li>조선호텔 시그니처 레더 키홀더 각인 증정</li>
+            <li>인룸 다이닝 하프 보틀 샴페인 교환권</li>
+            <li>Track A / Track B 전용 컨시어지 우선 예약권</li>
+          </ul>
+        </div>
+
+        <input type="text" placeholder="휴대폰 번호 입력 (- 제외)" class="w-full px-4 py-3 bg-black/40 border border-josun-gold/30 rounded text-josun-sand text-xs focus:outline-none focus:border-josun-gold">
+        
+        <button onclick="alert('JOSUN ONE\'S 앱 다운로드 링크와 웰컴 바우처가 SMS로 발송되었습니다.'); closeModal('app-download')" class="w-full py-3.5 bg-josun-gold text-josun-emerald-dark font-bold text-xs uppercase tracking-wider rounded hover:bg-josun-gold-light transition gold-glow">
+          다운로드 링크 & 웰컴 패키지 수령
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Scripts -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Tab Switching
+    function switchAssetTab(tabId) {
+      const tabs = ['cardnews', 'poster', 'shortform'];
+      tabs.forEach(t => {
+        document.getElementById(`content-${t}`).classList.add('hidden');
+        const tabBtn = document.getElementById(`tab-${t}`);
+        tabBtn.classList.remove('bg-josun-gold', 'text-josun-emerald-dark', 'font-semibold');
+        tabBtn.classList.add('text-josun-sand');
+      });
+
+      document.getElementById(`content-${tabId}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-${tabId}`);
+      activeBtn.classList.add('bg-josun-gold', 'text-josun-emerald-dark', 'font-semibold');
+      activeBtn.classList.remove('text-josun-sand');
+    }
+
+    // Lightbox Modal
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').innerText = caption;
+      document.getElementById('lightbox').classList.remove('hidden');
+      document.getElementById('lightbox').classList.add('flex');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
+      document.getElementById('lightbox').classList.remove('flex');
+    }
+
+    // Modal Control
+    function openModal(type) {
+      if (type === 'app-download') {
+        document.getElementById('app-modal').classList.remove('hidden');
+        document.getElementById('app-modal').classList.add('flex');
+      }
+    }
+
+    function closeModal(type) {
+      if (type === 'app-download') {
+        document.getElementById('app-modal').classList.add('hidden');
+        document.getElementById('app-modal').classList.remove('flex');
+      }
+    }
+
+    // Keyboard ESC for modals
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closeModal('app-download');
+      }
+    });
+
+    // Milestone Progress Tracking
+    function updateMilestoneProgress() {
+      const checkboxes = document.querySelectorAll('.milestone-check');
+      const checked = document.querySelectorAll('.milestone-check:checked');
+      const percent = Math.round((checked.length / checkboxes.length) * 100);
+      document.getElementById('progress-percent').innerText = `${percent}%`;
+    }
+
+    // 18-Second Short-Form Simulator Engine
+    const scenes = [
+      {
+        time: '00초 ~ 04초 (4초)',
+        label: '00:00 / 00:18',
+        tag: '[Scene 1: Problem]',
+        progress: '22%',
+        bgm: '일상 소음 + 시계 초침 째깍거림',
+        subtitle: '"혼자 쉬러 갔는데... 왜 더 지치는 걸까?"',
+        visual: '[Problem] 빠른 컷 전환: 붐비는 식당 2인석 눈치, 맛집 대기열, 배터리 방전 직전 지친 표정',
+        footer: '심리적 공감대 후킹',
+        transition: 'Transition: 컷 전환 급격'
+      },
+      {
+        time: '04초 ~ 09초 (5초)',
+        label: '00:04 / 00:18',
+        tag: '[Scene 2: Solution]',
+        progress: '50%',
+        bgm: '청아한 종소리 + Lo-Fi 로맨틱 재즈 피아노',
+        subtitle: '"귀찮은 건 호텔이 다 해둘게요."',
+        visual: '[Solution] JOSUN ONE\'S 앱 원터치 → 에메랄드 그린 톤 반전 → 호텔 로비 전담 직원 영접',
+        footer: '선택 피로도 제로화 반전',
+        transition: 'Transition: 에메랄드 페이드인'
+      },
+      {
+        time: '09초 ~ 14초 (5초)',
+        label: '00:09 / 00:18',
+        tag: '[Scene 3: Delight]',
+        progress: '78%',
+        bgm: '샴페인 탄산 ASMR + 잔 부딪히는 소리',
+        subtitle: '"Track A: 완벽한 프라이빗 / Track B: 취향의 연결"',
+        visual: '[Delight] Track A: 실크 가운, 스위트 침대, 1인 풀코스 룸서비스 / Track B: 프라이빗 살롱 와인 씬',
+        footer: '듀얼 트랙 실체 시각화',
+        transition: 'Transition: 좌우 스플릿 대비'
+      },
+      {
+        time: '14초 ~ 18초 (4초)',
+        label: '00:14 / 00:18',
+        tag: '[Scene 4: Brand Ending]',
+        progress: '100%',
+        bgm: '재즈 피아노 마무리 + 차분한 여성 내레이션',
+        subtitle: '"ONCE, ONE\'S BY JOSUN HOTEL - 혼자이기 때문에, 더 온전하게."',
+        visual: '[Brand Ending] 창밖 시티뷰, 만족스러운 미소, 브랜드 로고 + 앱 웰컴 혜택 디스플레이',
+        footer: '브랜드 각인 및 CTA',
+        transition: 'Transition: 골드 로고 딤아웃'
+      }
+    ];
+
+    function setShortsScene(index) {
+      const s = scenes[index];
+      document.getElementById('player-time-label').innerText = s.label;
+      document.getElementById('player-scene-tag').innerText = s.tag;
+      document.getElementById('timeline-progress').style.width = s.progress;
+      document.getElementById('scene-seconds').innerText = s.time;
+      document.getElementById('scene-bgm').innerHTML = `<i data-lucide="music" class="w-3.5 h-3.5 text-josun-gold inline mr-1"></i> ${s.bgm}`;
+      document.getElementById('scene-subtitle').innerText = s.subtitle;
+      document.getElementById('scene-visual').innerText = s.visual;
+      lucide.createIcons();
+    }
+
+    let playbackTimer = null;
+    function playShortsTimeline() {
+      if (playbackTimer) clearInterval(playbackTimer);
+      let step = 0;
+      setShortsScene(step);
+      playbackTimer = setInterval(() => {
+        step++;
+        if (step >= scenes.length) {
+          clearInterval(playbackTimer);
+          document.getElementById('play-btn').innerHTML = `<i data-lucide="rotate-ccw" class="w-4 h-4"></i> 다시 재생하기`;
+          lucide.createIcons();
+          return;
+        }
+        setShortsScene(step);
+      }, 3500);
+      document.getElementById('play-btn').innerHTML = `<i data-lucide="loader" class="w-4 h-4 animate-spin"></i> 재생 중...`;
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
