@@ -336,8 +336,13 @@
             
             <!-- Card 1 -->
             <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
-              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('input_file_0.png', 'Card 1: 후킹 커버 (Hooking Cover)')">
-                <img src="input_file_0.png" alt="Card 1 후킹 커버" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Card 1: 후킹 커버 (Hooking Cover)')">
+                <img 
+                  src="01.png" 
+                  onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1'; this.src='01.jpg';} else if(!this.dataset.triedOrig){this.dataset.triedOrig='1'; this.src='input_file_0.png';}" 
+                  alt="Card 1 후킹 커버" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
                   <span class="text-xs text-josun-gold flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> 클릭하여 확대</span>
                 </div>
@@ -352,15 +357,20 @@
                   </p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-josun-gold/15 text-[10px] font-mono text-josun-sand/50">
-                  Visual: 샴페인 글라스 + 에메랄드 벨벳
+                  Visual: 샴페인 글라스 + 에메랄드 벨벳 (01)
                 </div>
               </div>
             </div>
 
             <!-- Card 2 -->
             <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
-              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('input_file_1.png', 'Card 2: TRACK A (Complete Privacy)')">
-                <img src="input_file_1.png" alt="Card 2 Track A" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Card 2: TRACK A (Complete Privacy)')">
+                <img 
+                  src="02.png" 
+                  onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1'; this.src='02.jpg';} else if(!this.dataset.triedOrig){this.dataset.triedOrig='1'; this.src='input_file_1.png';}" 
+                  alt="Card 2 Track A" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
                   <span class="text-xs text-josun-gold flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> 클릭하여 확대</span>
                 </div>
@@ -375,15 +385,20 @@
                   </p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-josun-gold/15 text-[10px] font-mono text-josun-sand/50">
-                  Visual: 골드 룸서비스 트롤리 + 하이앵글
+                  Visual: 골드 룸서비스 트롤리 + 하이앵글 (02)
                 </div>
               </div>
             </div>
 
             <!-- Card 3 -->
             <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
-              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('input_file_2.png', 'Card 3: TRACK B (Soft Connection)')">
-                <img src="input_file_2.png" alt="Card 3 Track B" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Card 3: TRACK B (Soft Connection)')">
+                <img 
+                  src="03.png" 
+                  onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1'; this.src='03.jpg';} else if(!this.dataset.triedOrig){this.dataset.triedOrig='1'; this.src='input_file_2.png';}" 
+                  alt="Card 3 Track B" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
                   <span class="text-xs text-josun-gold flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> 클릭하여 확대</span>
                 </div>
@@ -398,15 +413,20 @@
                   </p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-josun-gold/15 text-[10px] font-mono text-josun-sand/50">
-                  Visual: 프라이빗 와인 살롱 & 테이스팅
+                  Visual: 프라이빗 와인 살롱 & 테이스팅 (03)
                 </div>
               </div>
             </div>
 
             <!-- Card 4 -->
             <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
-              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('input_file_3.png', 'Card 4: 브랜드 가치 및 CTA (우리 사람)')">
-                <img src="input_file_3.png" alt="Card 4 CTA" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Card 4: 브랜드 가치 및 CTA (우리 사람)')">
+                <img 
+                  src="04.png" 
+                  onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1'; this.src='04.jpg';} else if(!this.dataset.triedOrig){this.dataset.triedOrig='1'; this.src='input_file_3.png';}" 
+                  alt="Card 4 CTA" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
                   <span class="text-xs text-josun-gold flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> 클릭하여 확대</span>
                 </div>
@@ -421,7 +441,7 @@
                   </p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-josun-gold/15 text-[10px] font-mono text-josun-sand/50">
-                  Visual: 스마트폰 앱 화면 클로즈업
+                  Visual: 스마트폰 앱 화면 클로즈업 (04)
                 </div>
               </div>
             </div>
