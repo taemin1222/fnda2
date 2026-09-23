@@ -108,6 +108,9 @@
         <a href="#dual-track" class="hover:text-josun-gold transition">듀얼 트랙 & AI</a>
         <a href="#strategy" class="hover:text-josun-gold transition">채널 전략 & 로드맵</a>
         <a href="#kpi" class="hover:text-josun-gold transition">목표 KPI</a>
+        <a href="./01/web1.html" class="px-2.5 py-1 rounded bg-josun-gold/10 border border-josun-gold/40 text-josun-gold hover:bg-josun-gold hover:text-josun-emerald-dark transition flex items-center gap-1">
+          <i data-lucide="clipboard-list" class="w-3.5 h-3.5"></i> 사전 설문
+        </a>
       </nav>
 
       <!-- Action Button -->
@@ -155,9 +158,9 @@
           <i data-lucide="eye" class="w-4 h-4"></i>
           홍보 비주얼 에셋 바로보기
         </a>
-        <a href="#dual-track" class="px-8 py-3.5 border border-josun-gold/60 text-josun-gold-light font-medium tracking-widest text-xs uppercase hover:bg-josun-emerald transition flex items-center gap-2">
-          <i data-lucide="compass" class="w-4 h-4"></i>
-          듀얼 트랙 시스템 탐색
+        <a href="./01/web1.html" class="px-8 py-3.5 border border-josun-gold/60 text-josun-gold-light font-medium tracking-widest text-xs uppercase hover:bg-josun-emerald transition flex items-center gap-2">
+          <i data-lucide="clipboard-list" class="w-4 h-4 text-josun-gold"></i>
+          사전 설문조사 참여하기
         </a>
       </div>
 
@@ -286,7 +289,7 @@
     </div>
   </section>
 
-  <!-- Section 2: Visual Assets Showcase (The Core!) -->
+  <!-- Section 2: Visual Assets Showcase -->
   <section id="assets" class="py-24 ambient-bg relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -331,9 +334,8 @@
             </div>
           </div>
 
-          <!-- 4 Cards Grid with Provided Images -->
+          <!-- 4 Cards Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            
             <!-- Card 1 -->
             <div class="bg-josun-emerald-dark/90 rounded-xl overflow-hidden border border-josun-gold/30 hover:border-josun-gold transition group flex flex-col">
               <div class="relative overflow-hidden aspect-square cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Card 1: 후킹 커버 (Hooking Cover)')">
@@ -587,7 +589,7 @@
 
             </div>
 
-            <!-- 9:16 Shorts Video Actual Player (3조 원스.mp4) -->
+            <!-- 9:16 Shorts Video Actual Player -->
             <div class="mt-12 pt-10 border-t border-josun-gold/20 flex flex-col items-center">
               <div class="text-center mb-6">
                 <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-josun-gold/15 text-josun-gold-light border border-josun-gold/30 text-[11px] font-mono uppercase tracking-wider mb-2">
@@ -602,7 +604,7 @@
                 </p>
               </div>
 
-              <!-- Smartphone Mockup Frame for 9:16 Ratio Video -->
+              <!-- Smartphone Mockup Frame -->
               <div class="relative w-full max-w-[320px] sm:max-w-[350px] aspect-[9/16] bg-black rounded-[42px] p-3.5 shadow-2xl border-4 border-josun-gold/60 gold-glow ring-2 ring-josun-gold/20">
                 <!-- Phone Top Speaker / Notch Deco -->
                 <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-4 bg-black/90 rounded-full z-20 flex items-center justify-center">
@@ -1039,6 +1041,26 @@
         </button>
       </div>
     </div>
+  </div>
+
+  <!-- Floating Survey Widget -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 group">
+    <!-- Hover Tooltip Message -->
+    <div class="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-josun-emerald/95 text-josun-gold-light border border-josun-gold/40 text-xs px-3.5 py-1.5 rounded-full shadow-lg font-serif">
+      ✨ 1분 사전 설문 참여하고 웰컴 혜택 받기
+    </div>
+    
+    <!-- Floating Main Button -->
+    <a href="./01/web1.html" 
+       class="flex items-center gap-2.5 px-4 py-3 bg-josun-gold text-josun-emerald-dark font-semibold text-xs tracking-wider uppercase rounded-full shadow-2xl hover:bg-josun-gold-light transition-all duration-300 gold-glow hover:scale-105 border border-josun-gold-light/40">
+      <div class="relative flex items-center justify-center">
+        <i data-lucide="clipboard-list" class="w-4 h-4"></i>
+        <span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+        <span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-red-500"></span>
+      </div>
+      <span class="font-serif font-bold">사전 설문조사</span>
+      <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+    </a>
   </div>
 
   <!-- Interactive Scripts -->
